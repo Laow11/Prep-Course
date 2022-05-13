@@ -1,9 +1,11 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const EleventyFiles = require("@11ty/eleventy/src/EleventyFiles");
+
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "Hello world";
 
-// Crea una variable numérica, puede ser cualquier número:
+// Crea una variable numérica, pue ser cualquier número:
 const nuevoNum = 5;
 
 // Crea una variable booleana:
@@ -157,13 +159,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
- return Math.round (num)
+ return Math.round (num) 
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
- return Math.ceil (num)
+ return Math.ceil (num) 
 }
 
 function numeroRandom() {
@@ -179,11 +181,12 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero == 0) {
     return false;
-  }
-   if(numero > 0) {
+  } 
+   else if(numero > 0) {
     return "Es positivo";
   }
-   {
+  else {  
+   
     return "Es negativo";
   }
 
